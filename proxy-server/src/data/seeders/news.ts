@@ -1,0 +1,27 @@
+module.exports = {
+    up: (queryInterface, Sequelize) => {
+      return queryInterface.bulkInsert("news", [
+        {
+          id: "4abdfdf0-43d7-47d4-bdc5-981ddbbe0ace",
+          img_url: "https://www.mobilku.net/hot/str/News/5276.1638927269-1.c.jpeg",
+          title: "1 MUAT RATUSAN MOBIL, RUMAH MEWAH INI PUNYA GARASI DUA LANTAI 7 December 2021 Mobilku.com - Punya rumah besar dan luas sepertinya merupakan mimpi semua orang. Namun, pernahkah kalian membayangk",
+          content: "MUAT RATUSAN MOBIL, RUMAH MEWAH INI PUNYA GARASI DUA LANTAI 7 December 2021 Mobilku.com - Punya rumah besar dan luas sepertinya merupakan mimpi semua orang. Namun, pernahkah kalian membayangkan jika memiliki rumah yang besar dengan ratusan mobil mewah dan antik di dalamnya? Sebuah rumah di Michigan, Amerika Serikat ini bisa jadi inspirasi kalian.    Sebuah rumah di dekat danau Michigan ini menawarkan fitur yang sangat di impi-impikan oleh kolektor mobil, yakni garasi besar seluas 1114 meter persegi yang siap dipakai untuk menyimpan berbagai koleksi otomotif kalian.    Bukan hanya garasinya saja yang luas, seluruh properti dari Michigan Lake House ini berdiri diatas hutan seluas 16 hektar dan dilengkapi oleh jogging track, lintasan motocross sepanjang 1,6 km, dan juga danau    Kemewahan rumah ini ternyata tidak berhenti sampai disitu. Bagi kalian yang bermimpi ingin menjadi Bruce Wayne / Batman, rumah ini juga menyediakan terowongan bawah tanah yang langsung mengarah dari garasi dan jalan pintas menuju rumah utama.     Selain itu di garasi lantai dua, garasi ini dilengkapi dengan dua ruang ganti, ruang cuci, kamar mandi, hingga area untuk duduk santai.    Dari foto-foto yang ada di internet, sang pemilik rumah tersebut bukan hanya memiliki ratusan mobil, tetapi ada juga koleksi sepeda motor, motor trail, perahu, hingga mobil salju. Menurut informasi, kolektor yang tinggal di sana saat ini sedang gemar dengan muscle car dan sedang membuat area khusus untuk mobil berotot tersebut.    Kalian mungkin berpikir mengapa Mobilku.com menampilkan berita mengenai rumah super mahal yang sepertinya tidak banyak orang yang mampu untuk membelinya?     Jawabannya sangat sederhana. Jika kami biasanya mengulas mobil-mobil mahal, sekarang kami ingin mengajak kalian melihat kegiatan dan properti apa saja yang biasanya dimiliki oleh para kolektor atau sultan.     Kami berharap berita ini juga bisa menjadi ladang bisnis baru, dimana kalian bisa mengumpulkan uang untuk membangun sebuah garasi raksasa yang menawarkan jasa perawatan serta penitipan mobil mewah bagi para sultan-sultan di Indonesia.",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          id: "a2b12e5b-7577-4e68-a093-6cdcb983b90f",
+          img_url: "https://www.mobilku.net/hot/str/News/5276.1638927269-1.c.jpeg",
+          title: "2 MUAT RATUSAN MOBIL, RUMAH MEWAH INI PUNYA GARASI DUA LANTAI 7 December 2021 Mobilku.com - Punya rumah besar dan luas sepertinya merupakan mimpi semua orang. Namun, pernahkah kalian membayangk",
+          content: "MUAT RATUSAN MOBIL, RUMAH MEWAH INI PUNYA GARASI DUA LANTAI 7 December 2021 Mobilku.com - Punya rumah besar dan luas sepertinya merupakan mimpi semua orang. Namun, pernahkah kalian membayangkan jika memiliki rumah yang besar dengan ratusan mobil mewah dan antik di dalamnya? Sebuah rumah di Michigan, Amerika Serikat ini bisa jadi inspirasi kalian.    Sebuah rumah di dekat danau Michigan ini menawarkan fitur yang sangat di impi-impikan oleh kolektor mobil, yakni garasi besar seluas 1114 meter persegi yang siap dipakai untuk menyimpan berbagai koleksi otomotif kalian.    Bukan hanya garasinya saja yang luas, seluruh properti dari Michigan Lake House ini berdiri diatas hutan seluas 16 hektar dan dilengkapi oleh jogging track, lintasan motocross sepanjang 1,6 km, dan juga danau    Kemewahan rumah ini ternyata tidak berhenti sampai disitu. Bagi kalian yang bermimpi ingin menjadi Bruce Wayne / Batman, rumah ini juga menyediakan terowongan bawah tanah yang langsung mengarah dari garasi dan jalan pintas menuju rumah utama.     Selain itu di garasi lantai dua, garasi ini dilengkapi dengan dua ruang ganti, ruang cuci, kamar mandi, hingga area untuk duduk santai.    Dari foto-foto yang ada di internet, sang pemilik rumah tersebut bukan hanya memiliki ratusan mobil, tetapi ada juga koleksi sepeda motor, motor trail, perahu, hingga mobil salju. Menurut informasi, kolektor yang tinggal di sana saat ini sedang gemar dengan muscle car dan sedang membuat area khusus untuk mobil berotot tersebut.    Kalian mungkin berpikir mengapa Mobilku.com menampilkan berita mengenai rumah super mahal yang sepertinya tidak banyak orang yang mampu untuk membelinya?     Jawabannya sangat sederhana. Jika kami biasanya mengulas mobil-mobil mahal, sekarang kami ingin mengajak kalian melihat kegiatan dan properti apa saja yang biasanya dimiliki oleh para kolektor atau sultan.     Kami berharap berita ini juga bisa menjadi ladang bisnis baru, dimana kalian bisa mengumpulkan uang untuk membangun sebuah garasi raksasa yang menawarkan jasa perawatan serta penitipan mobil mewah bagi para sultan-sultan di Indonesia.",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+          },
+      ]);
+    },
+  
+    down: (queryInterface, Sequelize) => {
+      return queryInterface.bulkDelete("news", null, {});
+    },
+  };
+  

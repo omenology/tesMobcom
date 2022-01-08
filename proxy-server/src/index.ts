@@ -1,8 +1,9 @@
 import express, { Express } from "express";
 import helmet from "helmet";
 import cors from "cors";
-import {createProxyMiddleware, fixRequestBody} from 'http-proxy-middleware'
-
+import { createProxyMiddleware, fixRequestBody } from "http-proxy-middleware";
+import news from "./data/model/news";
+import route from "./route";
 
 const app: Express = express();
 
@@ -21,14 +22,29 @@ app.use(
 );
 
 // proxy route
-app.use("/api",  createProxyMiddleware({ target: "https://jsonplaceholder.typicode.com/", changeOrigin: true, onProxyReq: fixRequestBody, pathRewrite: { "/api": "" } }));
+// app.use(
+//   "/api",
+//   createProxyMiddleware({
+//     target: "https://jsonplaceholder.typicode.com/",
+//     changeOrigin: true,
+//     onProxyReq: fixRequestBody,
+//     pathRewrite: { "/api": "" },
+//   })
+// );
 
+// route
+app.use('/api',route)
 
 // route not found
 app.use("*", (req, res) => {
   res.status(404).send("Endpoint Not Found");
 });
 
-const server = app.listen(4000, () => {
-  console.log(`Service start on port : ${4000}`);
+const server = app.listen(4000, async () => {
+  try {
+    await news.sync();
+    console.log(`Service start on port : ${4000}`);
+  } catch (error) {
+    console.log("something went wrong");
+  }
 });
